@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'montserrat';
+    background: whitesmoke;
+}
+
+.highlight {
+    width : 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.nav-color {
+    background-color: #465881;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 4em;
+    margin-top: 2em;
+}
+
+.card{
+    background: white;
+    padding: 1em;
+    border-radius: .5em;
+    box-shadow: 
+        0 20px 30px 0 rgba(0, 0, 0, .1),
+        0 4px 4px 0 rgba(0, 0, 0, .15),
+        0 2px 2px 0 rgba(0, 0, 0, .6)
+}
+
+.droid {
+    width: 300px;
+    height:400px;
+    padding: 10px;
+    border: 1px solid #444444;
+    border-radius: 3px;
+    margin: 40px auto;
+    box-shadow: 
+        0 20px 30px 0 rgba(0, 0, 0, .1),
+        0 4px 4px 0 rgba(0, 0, 0, .15),
+        0 2px 2px 0 rgba(0, 0, 0, .6);
+    animation: drop 3s;
+    transform:rotateZ(12deg);
+    background-color: #c9d1d3;
+    animation-name: fade;
+    animation-duration: 4s;
+}
+
+.droid-cont {
+    width:280px;
+    height: 280px;
+
+}
+@keyframes fade {
+    from {background-color: #c9d1d3;}
+    to {background-color: white}
+}
+
+.card:hover {
+    background-color:#00909e;
+}
+
+.droid:hover {
+    background-color: white;
+}
+
+.button {
+    position: relative;
+    text-align: center;
+    
+
+}
